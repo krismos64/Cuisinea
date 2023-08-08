@@ -8,7 +8,7 @@ require_once 'templates/header.php';
 
 $id = (int)$_GET['id'];
 
-$recipe = getRecipe($pdo, $id);
+$recipe = getRecipes($pdo, $id);
 
 if ($recipe) {
     if ($recipe['image'] == null) {
